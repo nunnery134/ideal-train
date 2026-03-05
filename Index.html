@@ -1571,8 +1571,8 @@ function spawnPolice(){
     const a=Math.random()*Math.PI*2,d=480+Math.random()*200;
     police.push({x:P.x+Math.cos(a)*d,y:P.y+Math.sin(a)*d,ang:0,hp:8+P.lv*2,maxHp:8+P.lv*2,spd:100+P.lv*5,dmg:10+P.lv*2,sr:1.4,st:Math.random()*1.5,alive:true,hf:0,sz:13,isSheriff:false});
   }
-  // Spawn Sheriff at wanted 5 + level 5+
-  if(wanted>=5&&P.lv>=5){
+  // Spawn Sheriff at wanted 5 + level 15+
+  if(wanted>=5&&P.lv>=15){
     for(let i=0;i<2;i++){
       const a=Math.random()*Math.PI*2,d=500+Math.random()*150;
       police.push({x:P.x+Math.cos(a)*d,y:P.y+Math.sin(a)*d,ang:0,
